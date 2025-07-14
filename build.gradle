@@ -17,6 +17,12 @@ dependencies {
     // https://mvnrepository.com/artifact/commons-io/commons-io
     // https://mvnrepository.com/artifact/commons-configuration/commons-configuration
     implementation("commons-configuration:commons-configuration:1.10")
+    // https://mvnrepository.com/artifact/org.testng/testng
+    testImplementation("org.testng:testng:7.11.0")
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.19.1")
+    // https://mvnrepository.com/artifact/com.github.javafaker/javafaker
+    implementation("com.github.javafaker:javafaker:1.0.2")
 }
 
 test {
