@@ -23,8 +23,15 @@ dependencies {
     implementation("com.fasterxml.jackson.core:jackson-databind:2.19.1")
     // https://mvnrepository.com/artifact/com.github.javafaker/javafaker
     implementation("com.github.javafaker:javafaker:1.0.2")
+    // https://mvnrepository.com/artifact/org.projectlombok/lombok
+    testCompileOnly("org.projectlombok:lombok:1.18.38")
+    testAnnotationProcessor("org.projectlombok:lombok:1.18.38")
+    // https://mvnrepository.com/artifact/io.qameta.allure/allure-testng
+    implementation("io.qameta.allure:allure-testng:2.29.1")
 }
 
 test {
-    useJUnitPlatform()
+    useTestNG(){
+        suites "./src/test/resources/suite.xml"
+    }
 }
